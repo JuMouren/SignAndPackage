@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="3.0" ExtensionBundleId="com.configurator.pscs6new" ExtensionBundleVersion="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Author><![CDATA[Configurator 3]]></Author>
+	<Abstract><![CDATA[&quot;Photoshop CS6 Sample Panel&quot; is a customized panel for Photoshop CS6 developed by Configurator 3. Once this extension is installed, &quot;Photoshop CS6 Sample Panel&quot; can be launched from Window &gt; Extension &gt; Photoshop CS6 Sample Panel. Select, Window &gt; Extension &gt; to close the Photoshop CS6 Sample Panel panel.]]></Abstract>
+	<ExtensionList>
+		<Extension Id="com.configurator.pscs6new" Version="1.0.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="PHXS" Version="[13.0,13.0]" />
+			<Host Name="PHSP" Version="[13.0,13.0]" />
+		</HostList>
+		<LocaleList>
+			<!-- TODO list all locales -->
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="3.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.configurator.pscs6new">
+			<DispatchInfo >
+				<Resources>
+					<SwfPath>./content/Photoshop CS6 Sample Panel.swf</SwfPath>
+					<ScriptPath>./content/Photoshop CS6 Sample Panel.jsx</ScriptPath>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>Photoshop CS6 Sample Panel</Menu>
+					<Geometry>
+						<Size>
+							<Height>700</Height>
+							<Width>490</Width>
+						</Size>
+						
+						<MinSize>
+  <Height>250</Height>
+  <Width>490</Width>
+</MinSize>
+					</Geometry>
+					<Icons>
+  <Icon Type="Normal">./content/Ps_CS6_Bright.png</Icon>
+  <Icon Type="RollOver">./content/Ps_CS6_rollover.png</Icon>
+  <Icon Type="DarkNormal">./content/Ps_CS6_Dark.png</Icon>
+</Icons>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
